@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px dotted red; */
+}
+
+#wrapper{
+    width: 400px;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+   
+}
+
+/* .row:nth-child(-n+6){
+    background-color: red;
+} */
+
+.row{
+    height:50px;
+    /* display: inline-flex; */
+    /* flex-direction:column; */
+    /* justify-content: space-around; */
+    padding: 20px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+p{
+    /* vertical-align: center; */
+    display: inline;
+    margin: auto 5px;
+} 
+
+button{
+    display: inline;
+}
+

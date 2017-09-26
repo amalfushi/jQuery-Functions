@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#wild').click(function(){
+                $('#wild span').css('background-color', 'green');
+                $('#wild span').css('color', 'yellow');
+            });
+            $('#hide').click(function(){
+                $('#row2 p').hide();
+            });
+            $('#show').click(function(){
+                $('#row2 p').show();
+            });
+            $('#toggle').click(function(){
+                $('legend').toggle();
+            });
+            $('#slideUp').click(function(){
+                $('#row5').slideUp();
+            });
+            $('#slideDown').click(function(){
+                $('#row5').slideDown();
+            });
+            $('#slideToggle').click(function(){
+                $('.row:nth-child(-n+6)').slideToggle();
+            });
+        });
+      
+    </script>
+</head>
+<body>
+    <div id='wrapper'>
+        <fieldset id='row1' class='row'>
+            <legend>.Click</legend>
+            <p id="wild">Click this text to see a <span>wild</span> change!</p>
+        </fieldset>
+
+        <fieldset id='row2' class='row'>
+            <legend>.Hide</legend>
+            <button id="hide">Button</button>
+            <p>Click this button to hide this text</p>
+        </fieldset>
+
+        <fieldset id='row3' class='row'>
+            <legend>.Show</legend>
+            <button id="show">Button</button>
+            <p>Click this button to show that text</p>
+        </fieldset>
+        
+        <fieldset id='row4' class='row'>
+            <legend>.Toggle</legend>
+            <button id="toggle">Button</button>
+            <p>Click this button to toggle all the legends!</p>
+        </fieldset>
+
+        <fieldset id='row5' class='row'>
+            <legend>.slideUp</legend>
+            <button id="slideUp">Button</button>
+            <p>Click this button to fancy hide this box!</p>
+        </fieldset>
+
+        <fieldset id='row6' class='row'>
+            <legend>.slideDown</legend>
+            <button id="slideDown">Button</button>
+            <p>Click this button to fancy bring it back</p>
+        </fieldset>
+
+        <fieldset id='row7' class='row'>
+            <legend>.slideDown</legend>
+            <button id="slideToggle">Button</button>
+            <p>Click this button to fancy toggle all previous ones!</p>
+        </fieldset>
+        <fieldset id='row8' class='row'>
+            
+        </fieldset>
+        <fieldset id='row9' class='row'>
+            
+        </fieldset>
+        <fieldset id='row10' class='row'>
+            
+        </fieldset>
+        <fieldset id='row11' class='row'>
+            
+        </fieldset>
+        <fieldset id='row12' class='row'>
+            
+        </fieldset>
+        <fieldset id='row13' class='row'>
+            
+        </fieldset>
+        <fieldset id='row14' class='row'>
+            
+        </fieldset>
+        <fieldset id='row15' class='row'>
+            
+        </fieldset>
+        <fieldset id='row16' class='row'>
+            
+        </fieldset>
+        <fieldset id='row17' class='row'>
+            
+        </fieldset>
+        <fieldset id='row18' class='row'>
+            
+        </fieldset>
+
+
+    </div>
+</body>
+</html>
