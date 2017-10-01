@@ -13,13 +13,13 @@
     flex-direction: column;
 }
 
-fieldset{
-   
+.blue{
+    color: lightblue;
+    background-color: darkblue;
+    padding: 5px;
+    border:  none;
+    border-radius: 5px;
 }
-
-/* .row:nth-child(-n+6){
-    background-color: red;
-} */
 
 .row{
     height:50px;

@@ -29,6 +29,24 @@
             $('#slideToggle').click(function(){
                 $('.row:nth-child(-n+6)').slideToggle();
             });
+            $('#addClass').click(function(){
+                $('button').addClass("blue");
+            });
+            $('#before').click(function(){
+                $('#row9').before('<p>Some Text!</p>')
+            });
+            $('#after').click(function(){
+                $('#row10').after('<p>Some Text!</p>')
+            });
+            $('#append').click(function(){
+                $('#row11 > p').append('Some Text!')
+            });
+            $('#html').click(function(){
+                $('#row12').html("<legend>HTML'ed</legend><img src='https://1.bp.blogspot.com/-rB9awCgQCc4/WDfz-3QNfQI/AAAAAAAD1bo/Y3ZYnCLFEYMaRLfxQzuwnQDP8SC_9z6YACLcB/s1600/AS001154_00.gif' alt='Adventure Time' style='height:60px; width:60px;'>")
+            });
+            $('#attr_button').click(function(){
+                $('#row13 > p').text($('#row13> button').attr('id'))
+            });
         });
       
     </script>
@@ -36,24 +54,24 @@
 <body>
     <div id='wrapper'>
         <fieldset id='row1' class='row'>
-            <legend>.Click</legend>
+            <legend>.click</legend>
             <p id="wild">Click this text to see a <span>wild</span> change!</p>
         </fieldset>
 
         <fieldset id='row2' class='row'>
-            <legend>.Hide</legend>
+            <legend>.hide</legend>
             <button id="hide">Button</button>
             <p>Click this button to hide this text</p>
         </fieldset>
 
         <fieldset id='row3' class='row'>
-            <legend>.Show</legend>
+            <legend>.show</legend>
             <button id="show">Button</button>
             <p>Click this button to show that text</p>
         </fieldset>
         
         <fieldset id='row4' class='row'>
-            <legend>.Toggle</legend>
+            <legend>.toggle</legend>
             <button id="toggle">Button</button>
             <p>Click this button to toggle all the legends!</p>
         </fieldset>
@@ -71,28 +89,47 @@
         </fieldset>
 
         <fieldset id='row7' class='row'>
-            <legend>.slideDown</legend>
+            <legend>.slideToggle</legend>
             <button id="slideToggle">Button</button>
             <p>Click this button to fancy toggle all previous ones!</p>
         </fieldset>
+
         <fieldset id='row8' class='row'>
-            
+            <legend>.addClass</legend>
+            <button id="addClass" class="blue">Button</button>
+            <p>Click this button to add the blue class to all of the buttons!</p>
         </fieldset>
+            
         <fieldset id='row9' class='row'>
-            
+            <legend>.before</legend>
+            <button id="before">Button</button>
+            <p>Click this button to add some text before this!</p>
         </fieldset>
+
         <fieldset id='row10' class='row'>
-            
+            <legend>.after</legend>
+            <button id="after">Button</button>
+            <p>Click this button to add some text after this!</p>
         </fieldset>
+
         <fieldset id='row11' class='row'>
-            
+            <legend>.append</legend>
+            <button id="append">Button</button>
+            <p>Click this button to add some text appended to this!</p>
         </fieldset>
+
         <fieldset id='row12' class='row'>
-            
+            <legend>.html</legend>
+            <button id="html">Button</button>
+            <p>Click this button to change the HTML of this box!</p>
         </fieldset>
+
         <fieldset id='row13' class='row'>
-            
+            <legend>.attr</legend>
+            <button id="attr_button">Button</button>
+            <p>Click this button to get the id attribute!</p>
         </fieldset>
+
         <fieldset id='row14' class='row'>
             
         </fieldset>
